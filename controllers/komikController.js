@@ -1,6 +1,7 @@
+const db = require('../models');
+const komikService = require('../services/komikService');
+
 async function createKomik(req, res) {
-    const db = require('../models');
-    const komikService = require('../services/komikService');
 
     const komikData = req.body;
 
